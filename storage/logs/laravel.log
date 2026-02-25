@@ -1,0 +1,85 @@
+[2026-02-25 10:07:45] local.ERROR: Model name contains invalid characters. {"exception":"[object] (InvalidArgumentException(code: 0): Model name contains invalid characters. at C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Routing/Console/ControllerMakeCommand.php:211)
+[stacktrace]
+#0 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Routing/Console/ControllerMakeCommand.php(179): Illuminate/Routing/Console/ControllerMakeCommand->parseModel()
+#1 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Routing/Console/ControllerMakeCommand.php(123): Illuminate/Routing/Console/ControllerMakeCommand->buildModelReplacements()
+#2 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Console/GeneratorCommand.php(185): Illuminate/Routing/Console/ControllerMakeCommand->buildClass()
+#3 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Console/GeneratorCommand->handle()
+#4 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#5 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure()
+#6 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod()
+#7 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call()
+#8 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call()
+#9 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute()
+#10 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run()
+#11 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(68): Illuminate/Console/Command->run()
+#12 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Console/Concerns/CallsCommands.php(29): Illuminate/Console/Command->runCommand()
+#13 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Foundation/Console/ModelMakeCommand.php(153): Illuminate/Console/Command->call()
+#14 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Foundation/Console/ModelMakeCommand.php(84): Illuminate/Foundation/Console/ModelMakeCommand->createController()
+#15 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Console/ModelMakeCommand->handle()
+#16 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#17 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure()
+#18 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod()
+#19 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call()
+#20 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call()
+#21 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute()
+#22 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run()
+#23 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/symfony/console/Application.php(1102): Illuminate/Console/Command->run()
+#24 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand()
+#25 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun()
+#26 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run()
+#27 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle()
+#28 C:/xampp/htdocs/Assignment 4/RecipeManager/artisan(16): Illuminate/Foundation/Application->handleCommand()
+#29 {main}
+"} 
+[2026-02-25 16:51:05] local.ERROR: Command "run" is not defined.
+
+Did you mean one of these?
+    cache:prune-stale-tags
+    model:prune
+    queue:prune-batches
+    queue:prune-failed
+    schedule:run {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"run\" is not defined.
+
+Did you mean one of these?
+    cache:prune-stale-tags
+    model:prune
+    queue:prune-batches
+    queue:prune-failed
+    schedule:run at C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/symfony/console/Application.php:759)
+[stacktrace]
+#0 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('run')
+#1 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#2 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/xampp/htdocs/Assignment 4/RecipeManager/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#5 {main}
+"} 
+[2026-02-25 16:51:13] local.ERROR: Command "migration" is not defined.
+
+Did you mean one of these?
+    make:migration
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"migration\" is not defined.
+
+Did you mean one of these?
+    make:migration
+    migrate
+    migrate:fresh
+    migrate:install
+    migrate:refresh
+    migrate:reset
+    migrate:rollback
+    migrate:status at C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/symfony/console/Application.php:759)
+[stacktrace]
+#0 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('migration')
+#1 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#2 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/xampp/htdocs/Assignment 4/RecipeManager/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/xampp/htdocs/Assignment 4/RecipeManager/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#5 {main}
+"} 
